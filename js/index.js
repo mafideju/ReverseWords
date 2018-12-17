@@ -1,16 +1,16 @@
-const reverseWords = (string) => {
-  const wordsArr = string.split(' ')
-  const reversedWordsArr = []
+const palavraContrario = (sentenca) => {
+  const arrayPalavras = sentenca.split(' ')
+  const arrayPalavrasContrario = []
 
-  wordsArr.forEach(word => {
-    let reverseWord = ''
-    for (var i = word.length - 1; i >= 0; i--) {
-      reverseWord += word[i]
+  arrayPalavras.forEach(palavra => {
+    let palavraAoContrario = ''
+    for (let i = palavra.length - 1; i >= 0; i--) {
+      palavraAoContrario += palavra[i]
     }
-    reversedWordsArr.push(reverseWord)
+    arrayPalavrasContrario.push(palavraAoContrario)
   });
-  return reversedWordsArr.join(' ')
+  return arrayPalavrasContrario.join(' ')
 }
 
-const test = reverseWords('socorram me subi no onibus em marrocos')
+const test = palavraContrario('12 23 34')
 console.log(test)
